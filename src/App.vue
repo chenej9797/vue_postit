@@ -93,8 +93,9 @@ export default {
       }
     },
     selectId(e, id) {
-      let isBlock = e.srcElement.classList.contains('colorBlock');
-      let isBtn = e.srcElement.classList.contains('delete');
+      const target = e.target || e.srcElement;
+      let isBlock = target.classList.contains('colorBlock');
+      let isBtn = target.classList.contains('delete');
       this.startPos={x: e.offsetX, y:e.offsetY};
       if (isBlock || isBtn) {
         this.nowId = -1;
