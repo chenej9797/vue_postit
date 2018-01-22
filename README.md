@@ -1,7 +1,7 @@
 # postit
 
 > A Vue.js project
-
+> https://chenej9797.github.io/vue_postit/dist/
 ## Build Setup
 
 ``` bash
